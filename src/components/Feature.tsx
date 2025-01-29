@@ -23,7 +23,7 @@ export const Feature = ({
     };
     window.addEventListener("mousemove", UpdateMousePosition);
     return () => {
-      window.removeEventListener("mousemover", UpdateMousePosition);
+      window.removeEventListener("mousemove", UpdateMousePosition);
     };
   }, [offsetX, offsetY]);
   return (
